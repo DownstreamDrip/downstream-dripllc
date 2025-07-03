@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downstream Drip LLC</title>
+  <style>
+    :root {
+      --baby-blue: #00BFFF;
+      --teal: #00CED1;
+      --green: #7FFF00;
+      --dark-blue: #002E5F;
+      --black: #0D0D0D;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, var(--baby-blue), white);
+      color: var(--black);
+    }
+
+    header {
+      background-color: var(--dark-blue);
+      padding: 1rem 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      max-width: 180px;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.5rem;
+    }
+
+    nav {
+      background-color: var(--teal);
+      padding: 0.5rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--green);
+    }
+
+    .section {
+      padding: 2rem;
+      margin: 1.5rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      color: var(--dark-blue);
+    }
+
+    footer {
+      background-color: var(--dark-blue);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+
+    form button {
+      background: linear-gradient(to right, var(--green), var(--teal));
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: linear-gradient(to right, var(--teal), var(--green));
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Downstream Drip Logo">
+    <h1>Downstream Drip LLC</h1>
+    <p>Pressure Washing & Exterior Cleaning Services</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We are a family-owned local business specializing in pressure washing, soft washing, and complete exterior cleaning. Loyal, friendly, punctual, and always prepared, Downstream Drip LLC is committed to restoring the beauty of homes and businesses with care and professionalism.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Pressure Washing:</strong> High-powered water cleaning for driveways, sidewalks, patios, and other hard surfaces.</li>
+      <li><strong>Soft Washing:</strong> Low-pressure cleaning ideal for siding, roofs, and fences. Safely removes algae, mold, and dirt.</li>
+      <li><strong>Exterior Cleaning:</strong> Full-service exterior cleaning for windows, decks, gutters, and more — great for curb appeal.</li>
+    </ul>
+  </section>
+
+  <section id="testimonials" class="section">
+    <h2>Testimonials</h2>
+    <blockquote>
+      "Downstream Drip LLC made our home look brand new again! Highly recommend their professional and friendly service."
+      <br><strong>– M. Johnson</strong>
+    </blockquote>
+    <blockquote>
+      "They showed up on time, explained everything clearly, and did a fantastic job. 5 stars!"
+      <br><strong>– L. Ramirez</strong>
+    </blockquote>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Before & After Gallery</h2>
+    <p>Check back soon to see some of our amazing transformations!</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Call us at <strong>805-291-0805</strong> or email <strong>DownstreamDripLLC@gmail.com</strong>.</p>
+    <form action="https://formspree.io/f/mayvlqnn" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="message">Message / Quote Request</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Downstream Drip LLC | 805-291-0805 | DownstreamDripLLC@gmail.com</p>
+  </footer>
+</body>
+</html>
